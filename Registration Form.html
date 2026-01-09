@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form action="/submit_registration" method="post" enctype="multipart/form-data">
+
+        <!-- Text Box for Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Radio Buttons for Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes for Courses -->
+        <label>Courses Interested In:</label><br>
+        <input type="checkbox" id="math" name="courses" value="Mathematics">
+        <label for="math">Mathematics</label><br>
+        <input type="checkbox" id="science" name="courses" value="Science">
+        <label for="science">Science</label><br>
+        <input type="checkbox" id="history" name="courses" value="History">
+        <label for="history">History</label><br><br>
+
+        <!-- Dropdown for Department -->
+        <label for="department">Select Department:</label><br>
+        <select id="department" name="department" required>
+            <option value="">--Select Department--</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Physics">Physics</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Arts">Arts</option>
+        </select><br><br>
+
+        <!-- Textarea for Address -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address here..."></textarea><br><br>
+
+        <!-- File Upload for Profile Picture -->
+        <label for="profilePic">Upload Profile Picture:</label><br>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*"><br><br>
+
+        <!-- Date Picker for Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+</body>
+</html>
